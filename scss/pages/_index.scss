@@ -1,0 +1,119 @@
+
+@include reset;
+
+.container__menus{
+    @include container__menus; 
+}  
+
+nav li{
+    @include min__menus; 
+    @include text_center;
+    justify-content: center;
+    align-items: center;
+    margin:3%;
+    h2{
+        @include h2;
+    }
+        h3{
+            @include h3; 
+        } 
+    
+    @media screen and (max-width:1100px){
+        h2{
+            font-size:2.2em;
+        }
+            h3{
+                font-size:2em;
+            }             
+    }
+        @media screen and (max-width:576px){
+            margin-top:30px;
+            h2{
+                font-size:1.8em;
+            }
+            h3{
+                font-size:1.8em;
+            }         
+        } 
+}
+
+.liens__note{
+    background-color:$note-menu-color;  
+        h2{
+            font-family: 'devon', cursive;
+            font-weight: 500;
+            color:$color-font-note;
+        }
+            h3{
+                font-family:'kalam', cursive;
+                text-transform:uppercase;
+                color:$color-font-note;
+            }
+}      
+                
+.liens__chic{
+    background-color: $background-chic; 
+        h2{
+	        font-family:'croissant', cursive;
+            font-weight: 100; 
+            @include deg_titre_chic;
+        }
+            h3{
+                font-family: 'sourceserifpro',bolder;
+                @include deg_sous_title_chic;
+            }
+}
+            
+.liens__papilles{
+    background-color: $background-papilles;
+        h2{
+                font-family:'dancing'; 
+                font-weight: 500;
+                @include deg_title_papilles;
+            }
+                h3{
+                    font-family:'Kalam', cursive;
+                    font-weight:500;               
+                    @include deg_sous_title_papilles;   
+                }
+}
+
+.liens__gout{
+    background-color:$background-gout;                
+    h2{
+        font-family:'kaushan';
+        font-weight: 500;
+        @include deg_title_gout;
+    }
+        h3{
+            font-family:'segoe print', 'Kalam', cursive;
+            font-weight:600;
+            @include deg_sous_title_gout;
+        } 
+}  
+         
+.button {
+    @include btn_prochainement;
+    @include dot;
+    p {
+        @include text_center;
+        font-family:'sinkin';
+        font-size:1.2em;
+        margin:-38px 0px 0px 0px;   
+        
+        @media screen and (max-width:576px){
+            font-size: 1.2em;
+            margin-top: -36px;
+        }
+    } 
+}    
+
+
+
+
+
+
+
+
+
+

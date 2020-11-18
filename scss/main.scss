@@ -1,0 +1,17 @@
+@import "utils/_variables";
+@import "utils/_mixins";
+
+@import "base/_reset";
+@import "base/_font";
+
+@import "layouts/_header";
+@import "layouts/_footer";
+
+@import "layouts/_style_pages";
+
+@import "pages/_index";
+@import "pages/_la_note_enchantee";
+@import "pages/_la_palette_du_gout";
+@import "pages/_le_chic_a_la_francaise";
+@import "pages/_le_delice_des_papilles";
+@import "pages/_mention-legales";

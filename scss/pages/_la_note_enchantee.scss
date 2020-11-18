@@ -1,0 +1,56 @@
+
+@include reset;
+
+._main_note{
+    background-color:$note-menu-color;
+    color:$color-font-note;
+    ._note{
+        @include note_musique;
+        margin-top:100px;
+    }
+        h2{
+            font-family:'devon', cursive;
+            margin:0;
+        } 
+}    
+._title_menus_note{       
+    h3::after{
+        @include soulignement;  
+    }
+        h3:hover:after{
+            @include after;
+        }                    
+            ._prix_note{
+                @media screen and (max-width:1100px){
+                    margin-right:10px;
+                    text-align: right;
+                    width: 71px;
+                }
+                @media screen and (max-width:576px){                          
+                    width: 118px;
+                    margin-right:10px;
+                    width: 160px;
+                }        
+            }
+}
+
+._sign_note{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+    ._end_note{
+        padding-right: 10px;
+        margin-bottom:20px;
+    }
+        h3{
+            font-family: 'devon';
+            @include h3; 
+            font-weight: 500;
+        }                                                         
+}    
+
+
+
+
+

@@ -1,0 +1,16 @@
+@mixin reset
+{
+    *
+        {
+            margin:0;
+            
+            padding:0;
+           
+            width:auto;
+            text-decoration: none;
+        }
+    li , ul
+        {
+            list-style-type: none
+        }
+}

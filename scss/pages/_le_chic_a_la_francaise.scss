@@ -1,0 +1,99 @@
+
+@include reset;
+
+._main_chic{
+    background-color:$background-chic;
+    color:$color-font-note;
+    h2{
+        font-family: 'croissant', cursive;
+        @include deg_titre_chic;
+    } 
+} 
+
+._title_menus_chic{
+    h3{
+        font-family: 'nimbus', arial;
+    } 
+        p{      
+            margin-left:50px;
+
+            @media screen and (max-width:1100px){
+                margin-left:40px;      
+            }
+            @media screen and (max-width:576px){
+                margin-left:0;
+            }                                               
+        }  
+            ._en_appetit , ._plaisir , ._gourmandise{
+                margin: 0px 20px 0px 20px;
+                width:95%;
+
+                @media screen and (max-width:1100px){
+                    width: 93%;
+                }
+                @media screen and (max-width:576px){
+                    width:95%;
+                } 
+            }        
+}
+
+._en_appetit{
+    color:#C67412;
+    h3::after{
+        @include soulignement;
+        bottom:0;
+    }
+        h3:hover:after{
+            @include after;
+        }  
+} 
+
+._plaisir{
+    color:#A56799;
+    h3::after{
+        @include soulignement;
+        bottom:0;
+    }
+        h3:hover:after{
+            @include after;
+        }  
+}
+        
+._gourmandise{
+    color:#6E4CCC;
+    h3::after{
+        @include soulignement;
+        bottom:0;
+    }
+        h3:hover:after{
+            @include after;
+        }  
+}                                
+                                
+._right_line , ._left_line{   
+    @media screen and (max-width:1100px){
+        width:20%;      
+    }
+    @media screen and (max-width:576px){
+        width:9%;
+        height:10px;
+    }  
+}
+                                    
+._prix_chic {                                                   
+    font-family:'nimbus', arial;
+    margin-right:50px;
+    width:65px;
+
+    @media screen and (max-width:1100px){                                          
+        margin-right:30px;  
+        width: 80px;     
+    }
+    @media screen and (max-width:576px){                                                       
+        margin-right:0;
+        width: 132px;
+    }                                                                                                    
+} 
+         
+                                                                                                
+

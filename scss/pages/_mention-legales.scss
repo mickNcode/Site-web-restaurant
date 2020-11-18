@@ -1,0 +1,61 @@
+
+.accueil{
+    @include accueil;
+}
+    .font__home{
+        @include home;
+    }
+
+.intro{
+    margin-bottom:80px;  
+    width:800px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (max-width:1100px){
+        width:70%;
+    }
+
+    @media screen and (max-width:576px){
+        width: 100%;
+    }
+
+    h2{
+        font-family:'poppins';
+        @include h2;
+        text-decoration: underline;
+        @include text_center;
+        margin-top:20px;
+    }
+        h4{
+            font-family:'poppins';
+            @include h4;
+            text-decoration: underline;
+            color:$green;
+            @include text_center;
+            margin-top:10px;
+        }
+            p{
+                font-family:'sourceserifpro';
+                font-size:1.3em;
+                text-align:justify;
+                padding:20px 50px 20px 50px ;
+                margin:0;
+            }
+    ul{
+        margin-bottom:100px;
+    }
+}
+
+footer{
+    @include footer__home;
+}
+
+footer a{
+    @include footer__a ; 
+}  
+    footer a:hover{
+        animation: wiggle 0.10s alternate infinite ease-in-out;
+    }

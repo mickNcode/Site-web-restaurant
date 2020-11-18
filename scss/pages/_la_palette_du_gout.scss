@@ -1,0 +1,60 @@
+
+@include reset;
+
+._main_gout{
+    background-color:$background-gout;
+        h2{
+            font-family: 'kaushan';
+            @include deg_title_gout; 
+        } 
+}  
+            
+._title_menus_gout {             
+    h3::after{
+        @include soulignement;
+        color:#3D923A;
+    }
+    h3:hover:after{
+        @include after;
+    }
+        p{                                
+            margin-left:60px;
+        
+            @media screen and (max-width:1100px){
+                margin-left:10px;      
+            }
+            @media screen and (max-width:576px){
+                margin-left:10px;
+            }
+        }  
+}    
+                        
+._right_line , ._left_line{                           
+    @media screen and (max-width:576px){
+        width:15%;
+        height:10px;
+    }
+}
+                            
+._prix_gout {
+    margin-right:60px;
+    width:55px;
+
+    @media screen and (max-width:1100px){                                        
+        margin-right:10px;   
+        width: 60px;    
+    }
+    @media screen and (max-width:576px){                                           
+        margin-right:10px;
+        text-align: right;
+        width: 200px;
+        margin-right:20px;
+    }
+}                                              
+                                                                     
+   
+
+
+
+
+

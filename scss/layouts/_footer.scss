@@ -1,0 +1,20 @@
+@mixin footer__home{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding:15px;
+    background:$green;  
+}
+
+@mixin footer__a
+{
+    font-family:'sinkin';
+    font-size:1.3em;
+    color:$yellow;
+    padding:3px 13px 0px 13px;
+
+}
